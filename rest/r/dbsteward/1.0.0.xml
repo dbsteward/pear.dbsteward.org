@@ -33,7 +33,7 @@ Stubbed Database Platform DDL generation:
 Supported db structure dump into DBSteward XML:
 * pgsql8    - PostgreSQL 8
  </n>
-    <f>138215</f>
+    <f>140975</f>
     <g>http://pear.dbsteward.org/get/DBSteward-1.0.0</g>
     <x xlink:href="package.1.0.0.xml"/>
 </r>
