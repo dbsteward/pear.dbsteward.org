@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<p xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package    http://pear.php.net/dtd/rest.package.xsd">
+<n>DBSteward</n>
+<c>pear.dbsteward.org</c>
+<ca xlink:href="/rest/c/Default">Default</ca>
+<l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+<s>SQL database XML definition tool for DDL creation and differencing</s>
+<d>
+            
+Database DDL generation for creation or
+upgrade of an existing database with a
+&quot;DDL compiler&quot; approach.
+
+Database upgrade DDL is generated from source
+XML, without connecting to the target database.
+
+http://dbsteward.org/
+      </d>
+<r xlink:href="/rest/r/dbsteward" />
+</p>

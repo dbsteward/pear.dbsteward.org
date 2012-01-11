@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2012-01-11T00:02:05-05:00</updated>
+    <updated>2012-01-11T15:21:46-05:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
         <name>http://pear.dbsteward.org</name>
     </author>
 
+    <entry>
+        <title>DBSteward 1.0.0 (beta)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.0.0.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.0.0.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2012-01-11T15:18:42-05:00</updated>
+        <content>
+            
+Initial release of DBSteward package
 
+Supported Database Platform DDL generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+
+Stubbed Database Platform DDL generation:
+* mysql4    - MySQL 4
+* oracle10g - Oracle 10g
+
+Supported db structure dump into DBSteward XML:
+* pgsql8    - PostgreSQL 8
+ 
+        </content>
+    </entry>
 </feed>
