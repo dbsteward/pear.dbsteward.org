@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2012-01-11T17:15:11-05:00</updated>
+    <updated>2012-01-11T18:01:20-05:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
