@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+  <name>pear.dbsteward.org</name>
+  <summary>DBSteward PEAR Channel Server</summary>
+  <alias>dbsteward</alias>
+  <url>http://pear.dbsteward.org/</url>
+</server>
