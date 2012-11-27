@@ -31,7 +31,7 @@ http://dbsteward.org/
   <active>yes</active>
  </developer>
  <date>2012-11-27</date>
- <time>09:44:30</time>
+ <time>11:59:18</time>
  <version>
   <release>1.2.1</release>
   <api>1.2</api>
@@ -175,7 +175,7 @@ Supported Platform Structure Extraction into XML:
    <file baseinstalldir="/" md5sum="6963c480690d67aca9028818a88f0b1a" name="DBSteward/sql_format/pgsql8/pgsql8_type.php" role="php" />
    <file baseinstalldir="/" md5sum="e7840cee99e94f71bb057c7ced6f7490" name="DBSteward/sql_format/pgsql8/pgsql8_view.php" role="php" />
    <file baseinstalldir="/" md5sum="b41d909b634755487c960532ad16d3b9" name="DBSteward/sql_format/pgsql8/slony1_slonik.php" role="php" />
-   <file baseinstalldir="/" md5sum="9cc6483eae6d7118105bd778c44a9dd7" name="DBSteward/sql_format/sql99/sql99.php" role="php" />
+   <file baseinstalldir="/" md5sum="7b8c7030a932b272cf9b02da9ce6f9e6" name="DBSteward/sql_format/sql99/sql99.php" role="php" />
    <file baseinstalldir="/" md5sum="a761a6aedd132871f56fb5aa94fde8d6" name="DBSteward/sql_format/sql99/sql99_column.php" role="php" />
    <file baseinstalldir="/" md5sum="38f48fb383dd4184d69c68be64e3f64c" name="DBSteward/sql_format/sql99/sql99_constraint.php" role="php" />
    <file baseinstalldir="/" md5sum="65e56d4be24cc33919ac81e6ca03ed21" name="DBSteward/sql_format/sql99/sql99_diff.php" role="php" />

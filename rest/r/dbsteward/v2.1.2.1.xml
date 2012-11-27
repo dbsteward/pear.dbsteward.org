@@ -21,7 +21,7 @@ XML, without connecting to the target database.
 http://dbsteward.org/
 
       </d>
-    <da>2012-11-27 09:44:30</da>
+    <da>2012-11-27 11:59:18</da>
     <n>
 DBSteward 1.2.1 Release
 
@@ -37,7 +37,7 @@ Supported Platform Structure Extraction into XML:
 * pgsql8    - PostgreSQL 8
 * mysql5    - MySQL 5
  </n>
-    <f>177758</f>
+    <f>178922</f>
     <g>http://pear.dbsteward.org/get/DBSteward-1.2.1</g>
     <x xlink:href="package.1.2.1.xml"/>
 </r>
