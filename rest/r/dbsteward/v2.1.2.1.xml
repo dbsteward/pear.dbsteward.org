@@ -5,7 +5,7 @@
     <v>1.2.1</v>
     <a>1.2</a>
     <mp>5.3.0</mp>
-    <st>beta</st>
+    <st>stable</st>
     <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
     <m>nkiraly</m>
     <s>SQL database XML definition tool for DDL creation and differencing</s>
@@ -19,8 +19,9 @@ Database upgrade DDL is generated from source
 XML, without connecting to the target database.
 
 http://dbsteward.org/
+
       </d>
-    <da>2012-11-20 10:31:21</da>
+    <da>2012-11-27 09:44:30</da>
     <n>
 DBSteward 1.2.1 Release
 
@@ -36,7 +37,7 @@ Supported Platform Structure Extraction into XML:
 * pgsql8    - PostgreSQL 8
 * mysql5    - MySQL 5
  </n>
-    <f>178687</f>
+    <f>177758</f>
     <g>http://pear.dbsteward.org/get/DBSteward-1.2.1</g>
     <x xlink:href="package.1.2.1.xml"/>
 </r>

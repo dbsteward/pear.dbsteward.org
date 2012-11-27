@@ -17,6 +17,7 @@ Database upgrade DDL is generated from source
 XML, without connecting to the target database.
 
 http://dbsteward.org/
+
       </d>
             <r xlink:href="/rest/r/dbsteward" />
         </p>
@@ -24,7 +25,7 @@ http://dbsteward.org/
         <a>
             <r>
                 <v>1.2.1</v>
-                <s>beta</s>
+                <s>stable</s>
             </r>
             <r>
                 <v>1.2.0</v>

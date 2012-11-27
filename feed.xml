@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2012-11-20T10:31:48-05:00</updated>
+    <updated>2012-11-27T09:45:31-05:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,13 +9,13 @@
     </author>
 
     <entry>
-        <title>DBSteward 1.2.1 (beta)</title>
+        <title>DBSteward 1.2.1 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.2.1.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.2.1.tgz</id>
         <author>
             <name>nkiraly</name>
         </author>
-        <updated>2012-11-20T10:31:21-05:00</updated>
+        <updated>2012-11-27T09:44:30-05:00</updated>
         <content>
             
 DBSteward 1.2.1 Release

@@ -16,6 +16,7 @@ Database upgrade DDL is generated from source
 XML, without connecting to the target database.
 
 http://dbsteward.org/
+
       </description>
  <lead>
   <name>Nicholas Kiraly</name>
@@ -29,15 +30,15 @@ http://dbsteward.org/
   <email>austin109@gmail.com</email>
   <active>yes</active>
  </developer>
- <date>2012-11-20</date>
- <time>10:31:21</time>
+ <date>2012-11-27</date>
+ <time>09:44:30</time>
  <version>
   <release>1.2.1</release>
   <api>1.2</api>
  </version>
  <stability>
-  <release>beta</release>
-  <api>beta</api>
+  <release>stable</release>
+  <api>stable</api>
  </stability>
  <license>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</license>
  <notes>
@@ -221,10 +222,10 @@ Supported Platform Structure Extraction into XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
-   <date>2012-11-20</date>
+   <date>2012-11-27</date>
    <license>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</license>
    <notes>
 DBSteward 1.2.1 Release
@@ -248,8 +249,8 @@ Supported Platform Structure Extraction into XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
    <date>2012-11-06</date>
    <license>Simplified BSD License</license>
@@ -275,8 +276,8 @@ Supported Platform Structure Extraction into XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
    <date>2012-05-03</date>
    <license>Simplified BSD License</license>
@@ -301,8 +302,8 @@ Supported db structure dump into DBSteward XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
    <date>2012-04-05</date>
    <license>Simplified BSD License</license>
@@ -327,8 +328,8 @@ Supported db structure dump into DBSteward XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
    <date>2012-02-13</date>
    <license>Simplified BSD License</license>
@@ -353,8 +354,8 @@ Supported db structure dump into DBSteward XML:
     <api>1.2</api>
    </version>
    <stability>
-    <release>beta</release>
-    <api>beta</api>
+    <release>stable</release>
+    <api>stable</api>
    </stability>
    <date>2012-01-11</date>
    <license>Simplified BSD License</license>

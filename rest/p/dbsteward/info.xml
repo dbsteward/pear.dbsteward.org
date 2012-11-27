@@ -15,6 +15,7 @@ Database upgrade DDL is generated from source
 XML, without connecting to the target database.
 
 http://dbsteward.org/
+
       </d>
 <r xlink:href="/rest/r/dbsteward" />
 </p>
