@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2012-12-20T12:00:41-05:00</updated>
+    <updated>2013-02-28T11:09:45-05:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,38 @@
     </author>
 
     <entry>
+        <title>DBSteward 1.2.3 (stable)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.2.3.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.2.3.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2013-02-28T11:08:54-05:00</updated>
+        <content>
+            
+DBSteward 1.2.3 Release
+
+* pgsql8 Extraction, Differencing Improvements
+* mysql5 Extraction, Differencing Fixes, Optimizations
+* Partitioned table defintion support for mysql5 and pgsql8
+* Fix DTD load failures under Mac OS
+* Fix bin/ references under SE-Linux, Arch Linux
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Stubbed Platform DDL generation:
+* oracle10g - Oracle 10g
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ 
+        </content>
+    </entry>    <entry>
         <title>DBSteward 1.2.2 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.2.2.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.2.2.tgz</id>
