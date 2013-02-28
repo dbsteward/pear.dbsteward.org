@@ -26,12 +26,24 @@ http://dbsteward.org/
  </lead>
  <developer>
   <name>Austin Hyde</name>
-  <user>austinhyde</user>
+  <user>ahyde</user>
   <email>austin109@gmail.com</email>
   <active>yes</active>
  </developer>
+ <developer>
+  <name>Bill Moran</name>
+  <user>wmoran</user>
+  <email>wmoran@potentialtech.com</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Adam Jette</name>
+  <user>ajette</user>
+  <email>jettea46@yahoo.com</email>
+  <active>yes</active>
+ </developer>
  <date>2013-02-28</date>
- <time>11:08:54</time>
+ <time>11:21:59</time>
  <version>
   <release>1.2.3</release>
   <api>1.2</api>
