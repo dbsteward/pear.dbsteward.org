@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/dbsteward">DBSteward</p>
+    <c>pear.dbsteward.org</c>
+    <v>1.3.0</v>
+    <st>stable</st>
+    <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+    <m>nkiraly</m>
+    <s>SQL database XML definition tool for DDL creation and differencing</s>
+    <d>
+            
+Database DDL generation for creation or
+upgrade of an existing database with a
+&quot;DDL compiler&quot; approach.
+
+Database upgrade DDL is generated from source
+XML, without connecting to the target database.
+
+http://dbsteward.org/
+
+      </d>
+    <da>2013-07-09 16:23:36</da>
+    <n>
+DBSteward 1.3.0 Release
+
+* API Updates:
+  - Format handler PHP fatals when certain CLI combos are used
+  - Data row differencing when pkeys change in the same release
+  - Addendum artifact creation mode
+  - Allow definitions to contain sqlformat hints for platform specific definitions
+  - refactor slony definition elements, make slony elements not required (see --generateslonik)
+* pgsql8 updates:
+  - Index quoting fixes
+  - slony replica set management expansion
+* mysql5 updates:
+  - Index and column quoting fixes
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ </n>
+    <f>200571</f>
+    <g>http://pear.dbsteward.org/get/DBSteward-1.3.0</g>
+    <x xlink:href="package.1.3.0.xml"/>
+</r>
