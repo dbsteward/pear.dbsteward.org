@@ -11,17 +11,18 @@
     <s>SQL database XML definition tool for DDL creation and differencing</s>
     <d>
             
-Database DDL generation for creation or
+Database definition tool for creation or
 upgrade of an existing database with a
-&quot;DDL compiler&quot; approach.
+&quot;SQL compiler&quot; approach.
 
-Database upgrade DDL is generated from source
-XML, without connecting to the target database.
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
 
 http://dbsteward.org/
 
       </d>
-    <da>2013-07-09 16:23:36</da>
+    <da>2013-07-09 16:44:01</da>
     <n>
 DBSteward 1.3.0 Release
 
@@ -46,7 +47,7 @@ Supported Platform Structure Extraction into XML:
 * pgsql8    - PostgreSQL 8
 * mysql5    - MySQL 5
  </n>
-    <f>200571</f>
+    <f>200371</f>
     <g>http://pear.dbsteward.org/get/DBSteward-1.3.0</g>
     <x xlink:href="package.1.3.0.xml"/>
 </r>
