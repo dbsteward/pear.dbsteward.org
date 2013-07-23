@@ -2,10 +2,10 @@
 <r xmlns="http://pear.php.net/dtd/rest.release2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release2 http://pear.php.net/dtd/rest.release2.xsd">
     <p xlink:href="/rest/p/dbsteward">DBSteward</p>
     <c>pear.dbsteward.org</c>
-    <v>1.0.0</v>
-    <a>1.0</a>
-    <mp>5.2.0</mp>
-    <st>beta</st>
+    <v>1.3.1</v>
+    <a>1.3</a>
+    <mp>5.3.0</mp>
+    <st>stable</st>
     <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
     <m>nkiraly</m>
     <s>SQL database XML definition tool for DDL creation and differencing</s>
@@ -22,22 +22,25 @@ without connecting to the target database.
 http://dbsteward.org/
 
       </d>
-    <da>2012-01-11 15:18:42</da>
+    <da>2013-07-23 18:49:31</da>
     <n>
-Initial release of DBSteward package
+DBSteward 1.3.1 Release
 
-Supported Database Platform DDL generation:
+Changes
+* Fix mysql5 AUTO_INCREMENT diffing where AUTO_INCREMENT modifier would not be applied
+* Fix mysql5 index extraction as it pertains to table primary keys
+* Fix mysql5 index auto-naming and name extraction
+
+Supported Platform DDL Generation and Differencing:
 * pgsql8    - PostgreSQL 8
 * mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
 
-Stubbed Database Platform DDL generation:
-* mysql4    - MySQL 4
-* oracle10g - Oracle 10g
-
-Supported db structure dump into DBSteward XML:
+Supported Platform Structure Extraction into XML:
 * pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
  </n>
-    <f>140053</f>
-    <g>http://pear.dbsteward.org/get/DBSteward-1.0.0</g>
-    <x xlink:href="package.1.0.0.xml"/>
+    <f>201722</f>
+    <g>http://pear.dbsteward.org/get/DBSteward-1.3.1</g>
+    <x xlink:href="package.1.3.1.xml"/>
 </r>
