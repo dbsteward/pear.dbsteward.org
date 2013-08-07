@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>DBSteward</name>
+ <channel>pear.dbsteward.org</channel>
+ <summary>SQL database XML definition tool for DDL creation and differencing</summary>
+ <description>
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      </description>
+ <lead>
+  <name>Nicholas Kiraly</name>
+  <user>nkiraly</user>
+  <email>kiraly.nicholas@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Austin Hyde</name>
+  <user>ahyde</user>
+  <email>austin109@gmail.com</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Bill Moran</name>
+  <user>wmoran</user>
+  <email>wmoran@potentialtech.com</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Adam Jette</name>
+  <user>ajette</user>
+  <email>jettea46@yahoo.com</email>
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Rusty Hamilton</name>
+  <user>rhamilton</user>
+  <email>rusty@shrub3.net</email>
+  <active>yes</active>
+ </developer>
+ <date>2013-08-07</date>
+ <time>12:59:53</time>
+ <version>
+  <release>1.3.2</release>
+  <api>1.3</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</license>
+ <notes>
+DBSteward 1.3.2 Release
+
+Changes
+* mysql5 index name collision fix
+* pgsql8 index differencing code inheritance fix
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a6380cef01ed6dc83d1eb17c9f392397" name="bin/dbsteward" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="68909f89edb9000d0d9e8801369cf883" name="DBSteward/active_sql_format_autoloader.php" role="php" />
+   <file baseinstalldir="/" md5sum="0d60d089521cf26a5d86b2d9c58712c8" name="DBSteward/dbsteward.dtd" role="data" />
+   <file baseinstalldir="/" md5sum="285ab037e8a7dc94375c2b79ed9c85ba" name="DBSteward/dbsteward.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c3fec09ea94ecb3a7e04aceed88832d" name="DBSteward/dbx.php" role="php" />
+   <file baseinstalldir="/" md5sum="c1e3fda381ce3cb3b2f7f3233a864dec" name="DBSteward/ofs_replica_set_router.php" role="php" />
+   <file baseinstalldir="/" md5sum="39782765071931d1e561680e81698a76" name="DBSteward/output_file_segmenter.php" role="php" />
+   <file baseinstalldir="/" md5sum="b7cc89b3f756d6cedf4d7650691630e1" name="DBSteward/sql_parser.php" role="php" />
+   <file baseinstalldir="/" md5sum="b2e47bcb190f057e7dc342816b6d761a" name="DBSteward/xml_parser.php" role="php" />
+   <file baseinstalldir="/" md5sum="85c4a746d70f8b5d448890848c3ca254" name="DBSteward/sql_format/mssql10/mssql10.php" role="php" />
+   <file baseinstalldir="/" md5sum="35d75aefa08236a9baf72b404fa9a7dd" name="DBSteward/sql_format/mssql10/mssql10_bit_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="4695f9d80300411426130780066aaac5" name="DBSteward/sql_format/mssql10/mssql10_column.php" role="php" />
+   <file baseinstalldir="/" md5sum="8e57112beb5b011bfaca7e64aab0efb2" name="DBSteward/sql_format/mssql10/mssql10_diff.php" role="php" />
+   <file baseinstalldir="/" md5sum="e343483a5df60ce1a726decdb4515956" name="DBSteward/sql_format/mssql10/mssql10_diff_functions.php" role="php" />
+   <file baseinstalldir="/" md5sum="ae9e052478921a1f2b2adc8621aeb393" name="DBSteward/sql_format/mssql10/mssql10_diff_indexes.php" role="php" />
+   <file baseinstalldir="/" md5sum="c46e4ce9b3518626414a7a37687df8a9" name="DBSteward/sql_format/mssql10/mssql10_diff_sequences.php" role="php" />
+   <file baseinstalldir="/" md5sum="dacc1b28b0d5b2aa71bab4f1d99f6884" name="DBSteward/sql_format/mssql10/mssql10_diff_tables.php" role="php" />
+   <file baseinstalldir="/" md5sum="fe30877fe18d09e56724c126a0a9040b" name="DBSteward/sql_format/mssql10/mssql10_diff_triggers.php" role="php" />
+   <file baseinstalldir="/" md5sum="2da8c35650f134aad8af100e097fe877" name="DBSteward/sql_format/mssql10/mssql10_diff_types.php" role="php" />
+   <file baseinstalldir="/" md5sum="80f2c8d96eff9b686154d3fd4c063396" name="DBSteward/sql_format/mssql10/mssql10_diff_views.php" role="php" />
+   <file baseinstalldir="/" md5sum="02e13933356ce7f1fc052c32869d4038" name="DBSteward/sql_format/mssql10/mssql10_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="256f74ce3d2037fbc55147ca954f146f" name="DBSteward/sql_format/mssql10/mssql10_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="14538df9b0899732ddba8057a2298f41" name="DBSteward/sql_format/mssql10/mssql10_permission.php" role="php" />
+   <file baseinstalldir="/" md5sum="50d5cba17c133afef7d33a414b299b90" name="DBSteward/sql_format/mssql10/mssql10_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="d5b9d22d4adb035f9d16d51eac483dee" name="DBSteward/sql_format/mssql10/mssql10_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="421874b335bcbbf7544f8aa961a631a1" name="DBSteward/sql_format/mssql10/mssql10_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e131b507b34db1c4a2bac3f5bbb142d" name="DBSteward/sql_format/mssql10/mssql10_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="cedfeb05995d7cd5a7c6e0f951a6fbdc" name="DBSteward/sql_format/mssql10/mssql10_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="57cdec0064987f9121a51249f2164f22" name="DBSteward/sql_format/mysql5/mysql5.php" role="php" />
+   <file baseinstalldir="/" md5sum="6d922574234ad17adc881639fe2c3937" name="DBSteward/sql_format/mysql5/mysql5_column.php" role="php" />
+   <file baseinstalldir="/" md5sum="a6523f1fcc160602d0ae82bbdda1e575" name="DBSteward/sql_format/mysql5/mysql5_constraint.php" role="php" />
+   <file baseinstalldir="/" md5sum="44cf60fdea71f3e6e2fd94ffb3a11462" name="DBSteward/sql_format/mysql5/mysql5_db.php" role="php" />
+   <file baseinstalldir="/" md5sum="5da26c49ef330e74a988a2ef62d50b06" name="DBSteward/sql_format/mysql5/mysql5_diff.php" role="php" />
+   <file baseinstalldir="/" md5sum="8cf9d7253f24745f685a7c576dfd668d" name="DBSteward/sql_format/mysql5/mysql5_diff_constraints.php" role="php" />
+   <file baseinstalldir="/" md5sum="088363367e2f779d431b9089713ae602" name="DBSteward/sql_format/mysql5/mysql5_diff_functions.php" role="php" />
+   <file baseinstalldir="/" md5sum="f0dcc16623e71fd1a2d183f00738f8f4" name="DBSteward/sql_format/mysql5/mysql5_diff_indexes.php" role="php" />
+   <file baseinstalldir="/" md5sum="070b2aa6e8ac215878222cfc10c7e683" name="DBSteward/sql_format/mysql5/mysql5_diff_sequences.php" role="php" />
+   <file baseinstalldir="/" md5sum="372362de5d926237720eb3da3359854d" name="DBSteward/sql_format/mysql5/mysql5_diff_tables.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c0aa35149710ce8c2898e03a3d20809" name="DBSteward/sql_format/mysql5/mysql5_diff_triggers.php" role="php" />
+   <file baseinstalldir="/" md5sum="2fbf1424862e2daaf747cf64dda1b091" name="DBSteward/sql_format/mysql5/mysql5_diff_types.php" role="php" />
+   <file baseinstalldir="/" md5sum="68e01f3b4c0e52eaf68137388fff51f0" name="DBSteward/sql_format/mysql5/mysql5_diff_views.php" role="php" />
+   <file baseinstalldir="/" md5sum="af1e1b5b773c2a4a0b7c2f82edebc774" name="DBSteward/sql_format/mysql5/mysql5_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="9f7cacae014d28511428b2d4c1d0c665" name="DBSteward/sql_format/mysql5/mysql5_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="f981c36478eb5a6f1035cf93e6071168" name="DBSteward/sql_format/mysql5/mysql5_permission.php" role="php" />
+   <file baseinstalldir="/" md5sum="b9467c247f1bd8a7f39a0f808d079bf2" name="DBSteward/sql_format/mysql5/mysql5_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="9565573498cda66575ef8e7a9de286b7" name="DBSteward/sql_format/mysql5/mysql5_sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="10707193222defbbfc7d2b5e47631bb6" name="DBSteward/sql_format/mysql5/mysql5_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="958b28a5d86c0219f22e38d6bd39c256" name="DBSteward/sql_format/mysql5/mysql5_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="3c6719d013e6b5e0f962ed30ddb9fefa" name="DBSteward/sql_format/mysql5/mysql5_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="5d324d0bd5a2c5c9b4e7dcadc47d477b" name="DBSteward/sql_format/mysql5/mysql5_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="121e57506ecaeb01b635cb4e19ae9528" name="DBSteward/sql_format/oracle10g/oracle10g.php" role="php" />
+   <file baseinstalldir="/" md5sum="97169e72516f849effbac99445f26e1d" name="DBSteward/sql_format/oracle10g/oracle10g_column.php" role="php" />
+   <file baseinstalldir="/" md5sum="89472db7fbf2e3cd87f189f716785891" name="DBSteward/sql_format/oracle10g/oracle10g_diff.php" role="php" />
+   <file baseinstalldir="/" md5sum="fdc2aca912671f23102ca47bc2823a1d" name="DBSteward/sql_format/oracle10g/oracle10g_diff_functions.php" role="php" />
+   <file baseinstalldir="/" md5sum="fa1aed14cbd5658bc3f4fac5a09076b1" name="DBSteward/sql_format/oracle10g/oracle10g_diff_indexes.php" role="php" />
+   <file baseinstalldir="/" md5sum="461607e3af8f6aa2e7c725d974fd8387" name="DBSteward/sql_format/oracle10g/oracle10g_diff_sequences.php" role="php" />
+   <file baseinstalldir="/" md5sum="6c0e1893a65994133eeaf4047c669771" name="DBSteward/sql_format/oracle10g/oracle10g_diff_tables.php" role="php" />
+   <file baseinstalldir="/" md5sum="af4624e2e4a124518a7390b527eb1c71" name="DBSteward/sql_format/oracle10g/oracle10g_diff_triggers.php" role="php" />
+   <file baseinstalldir="/" md5sum="8b9ac7984fd6461a6c438ff017472d9e" name="DBSteward/sql_format/oracle10g/oracle10g_diff_types.php" role="php" />
+   <file baseinstalldir="/" md5sum="9734a16e7658665194adc0ddfa2321da" name="DBSteward/sql_format/oracle10g/oracle10g_diff_views.php" role="php" />
+   <file baseinstalldir="/" md5sum="c00f984488e1edece0636377b37fe10d" name="DBSteward/sql_format/oracle10g/oracle10g_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="79af69b9ee9f9406828b3a483010cb5f" name="DBSteward/sql_format/oracle10g/oracle10g_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="1af3e5a83c0233760d348077974f3557" name="DBSteward/sql_format/oracle10g/oracle10g_permission.php" role="php" />
+   <file baseinstalldir="/" md5sum="c96caf14ca1a2f37b2a05126c513c722" name="DBSteward/sql_format/oracle10g/oracle10g_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="7998f638a84127a05a07a05864848cff" name="DBSteward/sql_format/oracle10g/oracle10g_sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="f1b5ebaa8730eab19648f14ec42d9f3d" name="DBSteward/sql_format/oracle10g/oracle10g_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="5df2de054272c743978a7df8fa22f56a" name="DBSteward/sql_format/oracle10g/oracle10g_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="79a6b4be2530fcdfe942de19cd6209c6" name="DBSteward/sql_format/oracle10g/oracle10g_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="675cca71c543cf8ab5eca80e323e2990" name="DBSteward/sql_format/oracle10g/oracle10g_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="47eff50509f8012fffcc0e50c50f5f42" name="DBSteward/sql_format/pgsql8/pgsql8.php" role="php" />
+   <file baseinstalldir="/" md5sum="2f89d8bb1c0200c6ea0792d332f396fb" name="DBSteward/sql_format/pgsql8/pgsql8_column.php" role="php" />
+   <file baseinstalldir="/" md5sum="0efaac6ead39b000a9c8b24346a58492" name="DBSteward/sql_format/pgsql8/pgsql8_constraint.php" role="php" />
+   <file baseinstalldir="/" md5sum="17cb04180cf03932a1dae4dfb49eb0e8" name="DBSteward/sql_format/pgsql8/pgsql8_db.php" role="php" />
+   <file baseinstalldir="/" md5sum="8e4926469680796430c69c25f49ee3b1" name="DBSteward/sql_format/pgsql8/pgsql8_diff.php" role="php" />
+   <file baseinstalldir="/" md5sum="23a0fd7ae62e8b2dc77735b6537b0024" name="DBSteward/sql_format/pgsql8/pgsql8_diff_functions.php" role="php" />
+   <file baseinstalldir="/" md5sum="b36ce8da3e035dd3ec3dc0278e40d427" name="DBSteward/sql_format/pgsql8/pgsql8_diff_indexes.php" role="php" />
+   <file baseinstalldir="/" md5sum="e4c8297403bf921ea324386f7f981eb4" name="DBSteward/sql_format/pgsql8/pgsql8_diff_languages.php" role="php" />
+   <file baseinstalldir="/" md5sum="e48d16cd4affa688fecc8addc0b4f7b1" name="DBSteward/sql_format/pgsql8/pgsql8_diff_sequences.php" role="php" />
+   <file baseinstalldir="/" md5sum="9238e18b3b7d26b215d4982f4ec6f777" name="DBSteward/sql_format/pgsql8/pgsql8_diff_tables.php" role="php" />
+   <file baseinstalldir="/" md5sum="006769d6b724e81d20f8eb87e02710b8" name="DBSteward/sql_format/pgsql8/pgsql8_diff_triggers.php" role="php" />
+   <file baseinstalldir="/" md5sum="659793cbee1b7de5f6fe9f6f9b93b8c3" name="DBSteward/sql_format/pgsql8/pgsql8_diff_types.php" role="php" />
+   <file baseinstalldir="/" md5sum="107b0d164104a22d1abc6583241447dc" name="DBSteward/sql_format/pgsql8/pgsql8_diff_views.php" role="php" />
+   <file baseinstalldir="/" md5sum="559a8bea58a5f192acbe4db648a03170" name="DBSteward/sql_format/pgsql8/pgsql8_dump_loader.php" role="php" />
+   <file baseinstalldir="/" md5sum="868115f9c54b65b066eb16c62a12603e" name="DBSteward/sql_format/pgsql8/pgsql8_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="aab281d23857b7b841d2cf2d69d8cbf9" name="DBSteward/sql_format/pgsql8/pgsql8_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="3e7d5892c3bf2e5ea8bd17736069ceb6" name="DBSteward/sql_format/pgsql8/pgsql8_language.php" role="php" />
+   <file baseinstalldir="/" md5sum="330885d9016163a27759eb774310b349" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="8d8b03ef61ed094f126d5453388a8db2" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_language.php" role="php" />
+   <file baseinstalldir="/" md5sum="38e7ebf0bae458ee951217d1adf460af" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="9e5d05fc1d1114bb526efc39e3dc3db9" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="b2117e5e6a99701e30a71937e44d9cfa" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="7cf13cf7053935583b318753375b2f73" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="28b34b576e32675445c599754f0188a5" name="DBSteward/sql_format/pgsql8/pgsql8_parser_config_parameter.php" role="php" />
+   <file baseinstalldir="/" md5sum="d4c1c85349260f2e73f5558891f88ae4" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="6d1a968b55e02c8bb1f49c77176b436c" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="0a665607906789c00869dd6128bb7f5e" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_language.php" role="php" />
+   <file baseinstalldir="/" md5sum="e3781105f4d03623ff870e4281e843b5" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="2ad93a7561ce04a0711fc61bc69922ee" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="dddd067792af8d049b8c98eb66a76f7f" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="dae7089310a9d58c4863a3b4fdd865b9" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="8e3b10aa1e5e57560e152cb7b97c13fe" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="35eb504b6ffa2fb86eac463b523e51bb" name="DBSteward/sql_format/pgsql8/pgsql8_parser_create_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="3799f82fa33a7b66b8f889afba3160da" name="DBSteward/sql_format/pgsql8/pgsql8_parser_delete_from.php" role="php" />
+   <file baseinstalldir="/" md5sum="539f521a70eb52d4ecff8100db474e56" name="DBSteward/sql_format/pgsql8/pgsql8_parser_grant_revoke.php" role="php" />
+   <file baseinstalldir="/" md5sum="71d00950b83ecba67b690bf2b3d5df8e" name="DBSteward/sql_format/pgsql8/pgsql8_parser_insert_into.php" role="php" />
+   <file baseinstalldir="/" md5sum="924068cdc5ec61504d14c947d743a6e1" name="DBSteward/sql_format/pgsql8/pgsql8_permission.php" role="php" />
+   <file baseinstalldir="/" md5sum="c0fea33f07fd24809185a3e3cfe5b3e6" name="DBSteward/sql_format/pgsql8/pgsql8_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="0a27699ec064348bd37082f1480d274d" name="DBSteward/sql_format/pgsql8/pgsql8_sequence.php" role="php" />
+   <file baseinstalldir="/" md5sum="caa6cbb43799867bcf6f721a35f642f2" name="DBSteward/sql_format/pgsql8/pgsql8_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="ad38e9e30aa15ca8a4e3e6bf933cd68c" name="DBSteward/sql_format/pgsql8/pgsql8_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="6963c480690d67aca9028818a88f0b1a" name="DBSteward/sql_format/pgsql8/pgsql8_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="e7840cee99e94f71bb057c7ced6f7490" name="DBSteward/sql_format/pgsql8/pgsql8_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="40b95054ad7a1a075036597951446817" name="DBSteward/sql_format/pgsql8/pgsql8_xml_parser.php" role="php" />
+   <file baseinstalldir="/" md5sum="b41d909b634755487c960532ad16d3b9" name="DBSteward/sql_format/pgsql8/slony1_slonik.php" role="php" />
+   <file baseinstalldir="/" md5sum="28f1761b32825d859064e21f3f6ebd35" name="DBSteward/sql_format/sql99/sql99.php" role="php" />
+   <file baseinstalldir="/" md5sum="a761a6aedd132871f56fb5aa94fde8d6" name="DBSteward/sql_format/sql99/sql99_column.php" role="php" />
+   <file baseinstalldir="/" md5sum="370427a52fc514fe7ad92a57abf91d70" name="DBSteward/sql_format/sql99/sql99_constraint.php" role="php" />
+   <file baseinstalldir="/" md5sum="d5bdf04a28aa3a5e957b02b27e638ad6" name="DBSteward/sql_format/sql99/sql99_diff.php" role="php" />
+   <file baseinstalldir="/" md5sum="01e5621e690e2e0ac868d16735bacf66" name="DBSteward/sql_format/sql99/sql99_diff_constraints.php" role="php" />
+   <file baseinstalldir="/" md5sum="38ca872745b0f17cbeacf35c9f85ab26" name="DBSteward/sql_format/sql99/sql99_diff_functions.php" role="php" />
+   <file baseinstalldir="/" md5sum="e3623707f79135415de078777b8296e6" name="DBSteward/sql_format/sql99/sql99_diff_indexes.php" role="php" />
+   <file baseinstalldir="/" md5sum="c2e5b20aba654419c84d9d8558f02571" name="DBSteward/sql_format/sql99/sql99_diff_sequences.php" role="php" />
+   <file baseinstalldir="/" md5sum="46a27a03f468ae6ee798042a17aeb617" name="DBSteward/sql_format/sql99/sql99_diff_tables.php" role="php" />
+   <file baseinstalldir="/" md5sum="d20b8487e3bb21057bcc45688dff37ae" name="DBSteward/sql_format/sql99/sql99_diff_triggers.php" role="php" />
+   <file baseinstalldir="/" md5sum="be7e2410dfe3dfafd9b756f0d34896ef" name="DBSteward/sql_format/sql99/sql99_diff_types.php" role="php" />
+   <file baseinstalldir="/" md5sum="168e587e14eb004fb7d6b5e669818ec2" name="DBSteward/sql_format/sql99/sql99_diff_views.php" role="php" />
+   <file baseinstalldir="/" md5sum="58a42667cd0a4b661313063789294dcd" name="DBSteward/sql_format/sql99/sql99_function.php" role="php" />
+   <file baseinstalldir="/" md5sum="8caa3dc1137c763606b08bdc27eb5599" name="DBSteward/sql_format/sql99/sql99_index.php" role="php" />
+   <file baseinstalldir="/" md5sum="df805e64fc3340925fb3d14a6b30e7c1" name="DBSteward/sql_format/sql99/sql99_permission.php" role="php" />
+   <file baseinstalldir="/" md5sum="602b3d2371282782b4e06bb02de5c6ae" name="DBSteward/sql_format/sql99/sql99_schema.php" role="php" />
+   <file baseinstalldir="/" md5sum="d5c5bae073d8823d369308af0bb1fd0b" name="DBSteward/sql_format/sql99/sql99_table.php" role="php" />
+   <file baseinstalldir="/" md5sum="93d886b213163d3056914d13aa65d097" name="DBSteward/sql_format/sql99/sql99_trigger.php" role="php" />
+   <file baseinstalldir="/" md5sum="9db50d32ae352e0f212b237951369a3c" name="DBSteward/sql_format/sql99/sql99_type.php" role="php" />
+   <file baseinstalldir="/" md5sum="7c77bb59385bf65923d916f60657f6c2" name="DBSteward/sql_format/sql99/sql99_view.php" role="php" />
+   <file baseinstalldir="/" md5sum="a3d8d72b18b8faca4ca1b4f05a246b51" name="DBSteward/sql_format/sql99/sql99_xml_parser.php" role="php" />
+   <file baseinstalldir="/" md5sum="b9e1acc4afbd2818bd7a06400b69ad8e" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.6.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="dbsteward" name="bin/dbsteward" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>1.3.3</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-09-01</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.3.3 Release
+
+Changes
+* Maintenance
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.3.2</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-08-07</date>
+   <license>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</license>
+   <notes>
+DBSteward 1.3.2 Release
+
+Changes
+* mysql5 index name collision fix
+* pgsql8 index differencing code inheritance fix
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.3.1</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-07-23</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.3.1 Release
+
+Changes
+* Fix mysql5 AUTO_INCREMENT diffing where AUTO_INCREMENT modifier would not be applied
+* Fix mysql5 index extraction as it pertains to table primary keys
+* Fix mysql5 index auto-naming and name extraction
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.3.0</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-07-09</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.3.0 Release
+
+* API Updates:
+  - Format handler PHP fatals when certain CLI combos are used
+  - Data row differencing when pkeys change in the same release
+  - Addendum artifact creation mode
+  - Allow definitions to contain sqlformat hints for platform specific definitions
+  - refactor slony definition elements, make slony elements not required (see --generateslonik)
+* pgsql8 updates:
+  - Index quoting fixes
+  - slony replica set management expansion
+* mysql5 updates:
+  - Index and column quoting fixes
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.2.4</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-03-26</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.2.4 Release
+
+* pgsql8 updates:
+  - diff language create / drop bug
+* mysql5 updates:
+  - preserve ENUM case during extraction
+  - extract columns timestamp ON UPDATE configuration properly
+* General updates:
+  - Quoting of some reserved words in pgsql8 and mysql5
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.2.3</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-02-26</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.2.3 Release
+
+* pgsql8 Extraction, Differencing Improvements
+* mysql5 Extraction, Differencing Fixes, Optimizations
+* Partitioned table defintion support for mysql5 and pgsql8
+* Fix DTD load failures under Mac OS
+* Fix bin/ references under SE-Linux, Arch Linux
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Stubbed Platform DDL generation:
+* oracle10g - Oracle 10g
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.2.2</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-12-17</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.2.2 Release
+
+* Identifier Quoting flag
+* Table Options extraction and differencing
+* --requireslonyid enforcement during pgsql8 diffing
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Stubbed Platform DDL generation:
+* oracle10g - Oracle 10g
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.2.1</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-20</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.2.1 Release
+
+Supported Platform DDL Generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Stubbed Platform DDL generation:
+* oracle10g - Oracle 10g
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.2.0</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-06</date>
+   <license>Simplified BSD License</license>
+   <notes>
+DBSteward 1.2.0 Release
+
+Supported Platform DDL Generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Stubbed Platform DDL generation:
+* oracle10g - Oracle 10g
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.2</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-05-03</date>
+   <license>Simplified BSD License</license>
+   <notes>
+--dbschemadump mode fixes for converting existing databases to DBSteward definitions
+
+Supported Database Platform DDL generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+
+Stubbed Database Platform DDL generation:
+* mysql4    - MySQL 4
+* oracle10g - Oracle 10g
+
+Supported db structure dump into DBSteward XML:
+* pgsql8    - PostgreSQL 8
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.1</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-04-05</date>
+   <license>Simplified BSD License</license>
+   <notes>
+API 1.1 includes CLI and XML definition changes for stage management, based on user group feedback.
+
+Supported Database Platform DDL generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+
+Stubbed Database Platform DDL generation:
+* mysql4    - MySQL 4
+* oracle10g - Oracle 10g
+
+Supported db structure dump into DBSteward XML:
+* pgsql8    - PostgreSQL 8
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-02-13</date>
+   <license>Simplified BSD License</license>
+   <notes>
+Maintenance release of DBSteward package
+
+Supported Database Platform DDL generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+
+Stubbed Database Platform DDL generation:
+* mysql4    - MySQL 4
+* oracle10g - Oracle 10g
+
+Supported db structure dump into DBSteward XML:
+* pgsql8    - PostgreSQL 8
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.3</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-01-11</date>
+   <license>Simplified BSD License</license>
+   <notes>
+Initial release of DBSteward package
+
+Supported Database Platform DDL generation:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+
+Stubbed Database Platform DDL generation:
+* mysql4    - MySQL 4
+* oracle10g - Oracle 10g
+
+Supported db structure dump into DBSteward XML:
+* pgsql8    - PostgreSQL 8
+   </notes>
+  </release>
+ </changelog>
+</package>
