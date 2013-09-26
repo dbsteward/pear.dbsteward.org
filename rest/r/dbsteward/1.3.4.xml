@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/dbsteward">DBSteward</p>
+    <c>pear.dbsteward.org</c>
+    <v>1.3.4</v>
+    <st>stable</st>
+    <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+    <m>nkiraly</m>
+    <s>SQL database XML definition tool for DDL creation and differencing</s>
+    <d>
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      </d>
+    <da>2013-09-26 18:20:08</da>
+    <n>
+DBSteward 1.3.4 Release
+
+Changes
+* Fix false negative sequence replication detection when pgsql8 table is partitioned
+* pgsql8 composite type definition support
+* mysql5 identifier case sensitivity when diffing
+* pgsql8 duplicate and multi-dimensional index extraction bugs fixed
+* Command-line switch handling improved to not override with defaults in some contexts
+* Vast improvement on static data row diffing speed when overlaying large static datas
+* pgsql8 Reorder function defintion location for pgsql8 %TYPE usage when defining functions
+* mysql5 don't try to process multiple schemas when not in mysql5 schema prefix mode
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ </n>
+    <f>208010</f>
+    <g>http://pear.dbsteward.org/get/DBSteward-1.3.4</g>
+    <x xlink:href="package.1.3.4.xml"/>
+</r>
