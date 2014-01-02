@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2013-10-28T17:08:34-04:00</updated>
+    <updated>2014-01-02T12:12:45-05:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,34 @@
     </author>
 
     <entry>
+        <title>DBSteward 1.3.6 (stable)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.3.6.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.3.6.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2014-01-02T12:12:29-05:00</updated>
+        <content>
+            
+DBSteward 1.3.6 Release
+
+Changes
+* Windows PHP runtime / xmllint compatibility
+* pgsql8 index quoting fix
+* pgsql8 type quoting fix
+* mysql5/pgsql8 table foreign key name quoting consistency
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ 
+        </content>
+    </entry>    <entry>
         <title>DBSteward 1.3.5 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.3.5.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.3.5.tgz</id>
