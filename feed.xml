@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2014-01-02T12:12:45-05:00</updated>
+    <updated>2014-03-11T02:06:20-04:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,51 @@
     </author>
 
     <entry>
+        <title>DBSteward 1.3.7 (stable)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.3.7.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.3.7.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2014-03-11T02:05:16-04:00</updated>
+        <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
+DBSteward 1.3.7 Release
+
+Changes
+* Fix sequence slonyId replication add and removal
+* Fix object quoting rules for functions
+* STRIP_SLONY anchors removed from upgrade scripts due
+  to advent of --generateslonik mode delineator
+* Output directory and file prefix specificity
+* Tune pgsql8_index dimension quoting
+* pgsql8 function definition extraction fix for array contains value operator
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ 
+        </content>
+    </entry>    <entry>
         <title>DBSteward 1.3.6 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.3.6.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.3.6.tgz</id>
@@ -17,6 +62,19 @@
         </author>
         <updated>2014-01-02T12:12:29-05:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.3.6 Release
 
@@ -46,6 +104,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2013-10-28T17:08:22-04:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.3.5 Release
 
 Changes
@@ -72,6 +143,19 @@ Supported Platform Structure Extraction into XML:
         </author>
         <updated>2013-09-26T18:20:08-04:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.3.4 Release
 
@@ -105,6 +189,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2013-08-18T13:01:23-04:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.3.3 Release
 
 Changes
@@ -136,6 +233,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2013-08-07T12:59:53-04:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.3.2 Release
 
 Changes
@@ -161,6 +271,19 @@ Supported Platform Structure Extraction into XML:
         </author>
         <updated>2013-07-23T18:49:31-04:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.3.1 Release
 
@@ -188,6 +311,19 @@ Supported Platform Structure Extraction into XML:
         </author>
         <updated>2013-07-09T16:44:01-04:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.3.0 Release
 
@@ -223,6 +359,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2013-03-26T10:00:14-04:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.2.4 Release
 
 * pgsql8 updates:
@@ -253,6 +402,19 @@ Supported Platform Structure Extraction into XML:
         </author>
         <updated>2013-02-28T11:21:59-05:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.2.3 Release
 
@@ -286,6 +448,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2012-12-20T11:58:51-05:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.2.2 Release
 
 * Identifier Quoting flag
@@ -316,6 +491,19 @@ Supported Platform Structure Extraction into XML:
         <updated>2012-11-27T11:59:18-05:00</updated>
         <content>
             
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
 DBSteward 1.2.1 Release
 
 Supported Platform DDL Generation:
@@ -340,6 +528,19 @@ Supported Platform Structure Extraction into XML:
         </author>
         <updated>2012-11-06T15:40:48-05:00</updated>
         <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
             
 DBSteward 1.2.0 Release
 
