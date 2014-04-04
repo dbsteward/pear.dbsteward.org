@@ -49,8 +49,8 @@ http://dbsteward.org/
   <email>rusty@shrub3.net</email>
   <active>yes</active>
  </developer>
- <date>2014-04-01</date>
- <time>17:56:07</time>
+ <date>2014-04-04</date>
+ <time>17:15:03</time>
  <version>
   <release>1.3.8</release>
   <api>1.3</api>
@@ -92,7 +92,7 @@ Supported Platform Structure Extraction into XML:
     <tasks:replace from="@bin_dir@" to="bin_dir" type="pear-config" />
    </file>
    <file baseinstalldir="/" md5sum="68909f89edb9000d0d9e8801369cf883" name="DBSteward/active_sql_format_autoloader.php" role="php" />
-   <file baseinstalldir="/" md5sum="7668e8ee8ba2f3b1a7b02c24da6a872c" name="DBSteward/dbsteward.dtd" role="data" />
+   <file baseinstalldir="/" md5sum="7668e8ee8ba2f3b1a7b02c24da6a872c" name="DBSteward/dbsteward.dtd" role="php" />
    <file baseinstalldir="/" md5sum="8439d6f6ff7a6cb35d2870621c018b07" name="DBSteward/dbsteward.php" role="php" />
    <file baseinstalldir="/" md5sum="61ff6cdf050c165dc87082c699cde7bb" name="DBSteward/dbx.php" role="php" />
    <file baseinstalldir="/" md5sum="c1e3fda381ce3cb3b2f7f3233a864dec" name="DBSteward/ofs_replica_set_router.php" role="php" />
@@ -132,7 +132,7 @@ Supported Platform Structure Extraction into XML:
    <file baseinstalldir="/" md5sum="2fbf1424862e2daaf747cf64dda1b091" name="DBSteward/sql_format/mysql5/mysql5_diff_types.php" role="php" />
    <file baseinstalldir="/" md5sum="68e01f3b4c0e52eaf68137388fff51f0" name="DBSteward/sql_format/mysql5/mysql5_diff_views.php" role="php" />
    <file baseinstalldir="/" md5sum="3fb2211d327846facce7d26aab31a596" name="DBSteward/sql_format/mysql5/mysql5_function.php" role="php" />
-   <file baseinstalldir="/" md5sum="c6ae5975545fedf8ef96ebc93ff9b574" name="DBSteward/sql_format/mysql5/mysql5_identifier_blacklist.txt" role="data" />
+   <file baseinstalldir="/" md5sum="c6ae5975545fedf8ef96ebc93ff9b574" name="DBSteward/sql_format/mysql5/mysql5_identifier_blacklist.txt" role="php" />
    <file baseinstalldir="/" md5sum="374618696974b5820443ecb128ca4410" name="DBSteward/sql_format/mysql5/mysql5_index.php" role="php" />
    <file baseinstalldir="/" md5sum="003d0cfa1af2e3143eb31985153b25a5" name="DBSteward/sql_format/mysql5/mysql5_permission.php" role="php" />
    <file baseinstalldir="/" md5sum="5323c3acb487e09a1ee244ee94bf6ea8" name="DBSteward/sql_format/mysql5/mysql5_schema.php" role="php" />
@@ -175,7 +175,7 @@ Supported Platform Structure Extraction into XML:
    <file baseinstalldir="/" md5sum="107b0d164104a22d1abc6583241447dc" name="DBSteward/sql_format/pgsql8/pgsql8_diff_views.php" role="php" />
    <file baseinstalldir="/" md5sum="559a8bea58a5f192acbe4db648a03170" name="DBSteward/sql_format/pgsql8/pgsql8_dump_loader.php" role="php" />
    <file baseinstalldir="/" md5sum="5d05a0b595e969d0e6f9b576b52c3d56" name="DBSteward/sql_format/pgsql8/pgsql8_function.php" role="php" />
-   <file baseinstalldir="/" md5sum="184ba5fbfe7ff810d88d0b5bab139699" name="DBSteward/sql_format/pgsql8/pgsql8_identifier_blacklist.txt" role="data" />
+   <file baseinstalldir="/" md5sum="184ba5fbfe7ff810d88d0b5bab139699" name="DBSteward/sql_format/pgsql8/pgsql8_identifier_blacklist.txt" role="php" />
    <file baseinstalldir="/" md5sum="caa5b165e6400c143518f13845166c41" name="DBSteward/sql_format/pgsql8/pgsql8_index.php" role="php" />
    <file baseinstalldir="/" md5sum="8e357932a3a4489da3552c39cc653640" name="DBSteward/sql_format/pgsql8/pgsql8_language.php" role="php" />
    <file baseinstalldir="/" md5sum="330885d9016163a27759eb774310b349" name="DBSteward/sql_format/pgsql8/pgsql8_parser_alter_function.php" role="php" />
@@ -255,7 +255,7 @@ Supported Platform Structure Extraction into XML:
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2014-04-01</date>
+   <date>2014-04-04</date>
    <license>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</license>
    <notes>
 DBSteward 1.3.8 Release
