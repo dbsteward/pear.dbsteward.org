@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2014-06-05T15:10:48-04:00</updated>
+    <updated>2014-06-24T17:11:53-04:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,47 @@
     </author>
 
     <entry>
+        <title>DBSteward 1.3.10 (stable)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.3.10.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.3.10.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2014-06-24T17:11:19-04:00</updated>
+        <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
+DBSteward 1.3.10 Release
+
+Changes
+* psql8 inherited table static row definition bugfixes
+* mysql5 table partition support for extracton and diffing
+* mysql5 stored procedure extraction and diffing support
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ 
+        </content>
+    </entry>    <entry>
         <title>DBSteward 1.3.9 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.3.9.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.3.9.tgz</id>
