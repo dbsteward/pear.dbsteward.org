@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+    <p xlink:href="/rest/p/dbsteward">DBSteward</p>
+    <c>pear.dbsteward.org</c>
+    <v>1.3.11</v>
+    <st>stable</st>
+    <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+    <m>nkiraly</m>
+    <s>SQL database XML definition tool for DDL creation and differencing</s>
+    <d>
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      </d>
+    <da>2014-08-28 14:37:03</da>
+    <n>
+DBSteward 1.3.11 Release
+
+Changes
+* fix cross-schema references of table-inherited columns
+* fix double quote support in sql tags
+* pgsql8 fix extraction of foreign key ON actions
+* mysql5 function characteristic definition and extraction support
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ </n>
+    <f>217366</f>
+    <g>http://pear.dbsteward.org/get/DBSteward-1.3.11</g>
+    <x xlink:href="package.1.3.11.xml"/>
+</r>
