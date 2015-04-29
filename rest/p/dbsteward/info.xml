@@ -3,7 +3,7 @@
 <n>DBSteward</n>
 <c>pear.dbsteward.org</c>
 <ca xlink:href="/rest/c/Default">Default</ca>
-<l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+<l>BSD 2 Clause http://opensource.org/licenses/BSD-2-Clause</l>
 <s>SQL database XML definition tool for DDL creation and differencing</s>
 <d>
             

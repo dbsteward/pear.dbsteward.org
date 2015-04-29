@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pear.dbsteward.org</id>
-    <updated>2014-08-28T14:37:26-04:00</updated>
+    <updated>2015-04-29T15:48:23-04:00</updated>
     <title>DBSteward PEAR Channel Latest Releases</title>
     <link href="http://pear.dbsteward.org/feed.xml" rel="self" />
     <author>
@@ -9,6 +9,52 @@
     </author>
 
     <entry>
+        <title>DBSteward 1.3.12 (stable)</title>
+        <link href="http://pear.dbsteward.org/get/DBSteward-1.3.12.tgz" />
+        <id>http://pear.dbsteward.org/get/DBSteward-1.3.12.tgz</id>
+        <author>
+            <name>nkiraly</name>
+        </author>
+        <updated>2015-04-29T15:36:06-04:00</updated>
+        <content>
+            
+            
+Database definition tool for creation or
+upgrade of an existing database with a
+&quot;SQL compiler&quot; approach.
+
+Database upgrade DDL/DML/DCL
+is generated from source XML,
+without connecting to the target database.
+
+http://dbsteward.org/
+
+      
+            
+DBSteward 1.3.12 Release
+
+Changes
+* allow infinite includeFile depth of definition fragment XML files
+* update outdated sample XML
+* View definition dependency support with new view element dependsOnViews attribute github/nkiraly/DBSteward PR #75
+* fix SQL output file transactionality when generating stage files for execution by slonik github/nkiraly/DBSteward PR #76
+* mysql5 column default removal fix github/nkiraly/DBSteward PR #77
+* Contextualize pgsql8 VIEW Slony Replica Set ID DROP / CREATE
+* Drop and recreate pgsql8 functions referring to types modified in the definition github/nkiraly/DBSteward PR #78
+* Optional tabrow delimiter specificity github/nkiraly/DBSteward PR #79
+
+
+Supported Platform DDL Generation and Differencing:
+* pgsql8    - PostgreSQL 8
+* mssql10   - Microsoft SQL Server 2008
+* mysql5    - MySQL 5
+
+Supported Platform Structure Extraction into XML:
+* pgsql8    - PostgreSQL 8
+* mysql5    - MySQL 5
+ 
+        </content>
+    </entry>    <entry>
         <title>DBSteward 1.3.11 (stable)</title>
         <link href="http://pear.dbsteward.org/get/DBSteward-1.3.11.tgz" />
         <id>http://pear.dbsteward.org/get/DBSteward-1.3.11.tgz</id>

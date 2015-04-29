@@ -6,7 +6,7 @@
     <a>1.2</a>
     <mp>5.3.0</mp>
     <st>stable</st>
-    <l>http://www.opensource.org/licenses/bsd-license.php Simplified BSD License</l>
+    <l>BSD 2 Clause http://opensource.org/licenses/BSD-2-Clause</l>
     <m>nkiraly</m>
     <s>SQL database XML definition tool for DDL creation and differencing</s>
     <d>
